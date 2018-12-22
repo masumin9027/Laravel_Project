@@ -13,3 +13,10 @@ npm-debug.log
 yarn-error.log
 .env
 .phpunit.result.cache
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.env.*
+.DS_Store
+Thumbs.db
