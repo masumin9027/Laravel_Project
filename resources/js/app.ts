@@ -5,9 +5,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+import './bootstrap'
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+import router from './router'
+import store from './store'
 
-window.Vue = require('vue');
+Vue.use(Vuetify);
 
 /**
  * The following block of code may be used to automatically register your
@@ -17,7 +21,7 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('index', require('./components/index.vue').default);
+//Vue.component('index', require('./components/index.vue').default);
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
@@ -29,5 +33,7 @@ Vue.component('index', require('./components/index.vue').default);
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router,
+    store,
 });

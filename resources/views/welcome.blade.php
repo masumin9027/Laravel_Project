@@ -11,11 +11,13 @@
         </script>
         <!-- Styles -->
         <link href="css/app.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body>
         <div id="app">
-            <index></index>
+            <router-view></router-view>
         </div>
         <script src="js/app.js"></script>
     </body>
