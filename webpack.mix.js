@@ -25,5 +25,8 @@ mix.ts('resources/js/app.ts', 'public/js')
    },
    resolve: {
      extensions: ['*', '.js', '.jsx', '.vue', '.ts', '.tsx'],
+     alias: {
+          '@': __dirname + '/resources/js'
+     }
    },
    });
